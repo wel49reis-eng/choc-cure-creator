@@ -1,4 +1,4 @@
-import testimonialAvatar from '@/assets/testimonial-avatar.jpg';
+import testimonialAvatar from '../assets/testimonial-avatar.jpg';
 
 interface TestimonialProps {
   name: string;
