@@ -3,6 +3,12 @@ import { Testimonial } from "@/components/Testimonial";
 import { FAQItem } from "@/components/FAQItem";
 import heroImage from "@/assets/hero-chocolate.jpg";
 import chocolateDessertsImage from "@/assets/chocolate-desserts.jpg";
+import marinaAvatar from "@/assets/marina-avatar.jpg";
+import anaPaulaAvatar from "@/assets/ana-paula-avatar.jpg";
+import carlaAvatar from "@/assets/carla-avatar.jpg";
+import robertaAvatar from "@/assets/roberta-avatar.jpg";
+import fernandaAvatar from "@/assets/fernanda-avatar.jpg";
+import julianaAvatar from "@/assets/juliana-avatar.jpg";
 
 export default function LandingPage() {
   return (
@@ -119,31 +125,37 @@ export default function LandingPage() {
               name="Marina S."
               text="Finalmente encontrei receitas que são gostosas DE VERDADE! Meu marido nem acredita que são saudáveis."
               location="São Paulo"
+              avatar={marinaAvatar}
             />
             <Testimonial 
               name="Ana Paula"
               text="Diabética há 10 anos, nunca pensei que poderia comer chocolate sem medo. Obrigada por mudar minha vida!"
               location="Rio de Janeiro"
+              avatar={anaPaulaAvatar}
             />
             <Testimonial 
               name="Carla M."
               text="Perdi 8kg em 3 meses comendo chocolate todo dia. Parece mentira, mas é real!"
               location="Minas Gerais"
+              avatar={carlaAvatar}
             />
             <Testimonial 
               name="Roberta L."
               text="Minha filha celíaca finalmente pode comer chocolate igual aos amigos. Ela fica radiante!"
               location="Bahia"
+              avatar={robertaAvatar}
             />
             <Testimonial 
               name="Fernanda"
               text="Sou nutricionista e recomendo essas receitas para todos os meus pacientes. Revolucionário!"
               location="Paraná"
+              avatar={fernandaAvatar}
             />
             <Testimonial 
               name="Juliana R."
               text="Ingredientes que já tenho em casa e o resultado é melhor que da confeitaria. Incrível!"
               location="Santa Catarina"
+              avatar={julianaAvatar}
             />
           </div>
         </div>
