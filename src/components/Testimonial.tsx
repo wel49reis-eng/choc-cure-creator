@@ -4,14 +4,21 @@ interface TestimonialProps {
   name: string;
   text: string;
   location?: string;
+  avatar?: string;
 }
 
-export const Testimonial = ({ name, text, location }: TestimonialProps) => {
+export const Testimonial = ({ name, text, location, avatar }: TestimonialProps) => {
   return (
     <div className="bg-card border border-border rounded-xl p-6 shadow-lg hover:shadow-neon transition-all duration-300">
       <div className="flex items-start gap-4">
         <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
-          <img src={testimonialAvatar} alt={name} className="w-full h-full object-cover" />
+          {avatar ? (
+            <img src={avatar} alt={name} className="w-full h-full object-cover" />
+          ) : (
+            <div className="w-full h-full bg-primary/20 flex items-center justify-center text-primary font-bold">
+              {name.charAt(0)}
+            </div>
+          )}
         </div>
         <div className="flex-1">
           <div className="flex items-center gap-2 mb-2">
