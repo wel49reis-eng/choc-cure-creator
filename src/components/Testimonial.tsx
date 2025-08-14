@@ -1,3 +1,5 @@
+import testimonialAvatar from '@/assets/testimonial-avatar.jpg';
+
 interface TestimonialProps {
   name: string;
   text: string;
@@ -8,8 +10,8 @@ export const Testimonial = ({ name, text, location }: TestimonialProps) => {
   return (
     <div className="bg-card border border-border rounded-xl p-6 shadow-lg hover:shadow-neon transition-all duration-300">
       <div className="flex items-start gap-4">
-        <div className="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center text-xl font-bold text-primary-foreground">
-          {name.charAt(0)}
+        <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
+          <img src={testimonialAvatar} alt={name} className="w-full h-full object-cover" />
         </div>
         <div className="flex-1">
           <div className="flex items-center gap-2 mb-2">
