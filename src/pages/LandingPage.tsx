@@ -10,7 +10,7 @@ import carlaAvatar from "@/assets/carla-avatar.jpg";
 import robertaAvatar from "@/assets/roberta-avatar.jpg";
 import fernandaAvatar from "@/assets/fernanda-avatar.jpg";
 import julianaAvatar from "@/assets/juliana-avatar.jpg";
-import guaranteeImage from "@/assets/guarantee-original.png";
+import guaranteeImage from "@/assets/guarantee-7-dias-final.png";
 import benefit1Image from "@/assets/benefit-1-faceis-rapidos.jpg";
 import benefit2Image from "@/assets/benefit-2-ingredientes-simples.jpg";
 import benefit3Image from "@/assets/benefit-3-sem-gluten.jpg";
@@ -272,7 +272,11 @@ export default function LandingPage() {
           <img 
             src={guaranteeImage} 
             alt="Garantia de 7 dias" 
-            className="w-24 h-24 mx-auto mb-6"
+            className="w-32 h-32 mx-auto mb-6 object-contain"
+            onError={(e) => {
+              console.log('Erro ao carregar imagem de garantia:', e);
+              e.currentTarget.style.display = 'none';
+            }}
           />
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
             Garantia Incondicional de 
