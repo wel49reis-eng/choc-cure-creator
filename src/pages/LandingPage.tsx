@@ -10,7 +10,7 @@ import carlaAvatar from "@/assets/carla-avatar.jpg";
 import robertaAvatar from "@/assets/roberta-avatar.jpg";
 import fernandaAvatar from "@/assets/fernanda-avatar.jpg";
 import julianaAvatar from "@/assets/juliana-avatar.jpg";
-import guaranteeImage from "@/assets/guarantee-new.png";
+import guaranteeImage from "@/assets/guarantee-final-new.png";
 import benefit1Image from "@/assets/benefit-1-faceis-rapidos.jpg";
 import benefit2Image from "@/assets/benefit-2-ingredientes-simples.jpg";
 import benefit3Image from "@/assets/benefit-3-sem-gluten.jpg";
@@ -269,11 +269,9 @@ export default function LandingPage() {
       <section className="py-20 px-4 bg-card/30">
         <div className="max-w-2xl mx-auto text-center">
           <img 
-            src={`https://i.postimg.cc/fRV2xfkh/Design-sem-nome-9.png?v=${Date.now()}`}
-            alt="Garantia de 7 dias - Nova" 
+            src={guaranteeImage}
+            alt="Garantia de 7 dias" 
             className="w-80 h-80 mx-auto mb-6 object-contain bg-card/30 rounded-2xl p-4"
-            onLoad={() => console.log('Nova imagem carregou com sucesso!')}
-            onError={(e) => console.log('Erro ao carregar nova imagem:', e)}
           />
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
             Garantia Incondicional de 
