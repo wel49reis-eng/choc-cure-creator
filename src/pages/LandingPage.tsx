@@ -11,6 +11,12 @@ import robertaAvatar from "@/assets/roberta-avatar.jpg";
 import fernandaAvatar from "@/assets/fernanda-avatar.jpg";
 import julianaAvatar from "@/assets/juliana-avatar.jpg";
 import guaranteeImage from "@/assets/guarantee-7-days-no-bg.png";
+import benefit1Image from "@/assets/benefit-1-faceis-rapidos.jpg";
+import benefit2Image from "@/assets/benefit-2-ingredientes-simples.jpg";
+import benefit3Image from "@/assets/benefit-3-sem-gluten.jpg";
+import benefit4Image from "@/assets/benefit-4-reducao-inchaco.jpg";
+import benefit5Image from "@/assets/benefit-5-saciam-menos.jpg";
+import benefit6Image from "@/assets/benefit-6-sabor-irresistivel.jpg";
 
 export default function LandingPage() {
   return (
@@ -95,29 +101,24 @@ export default function LandingPage() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {[
-              { text: "Fáceis e rápidos de preparar", image: "/benefit-1-faceis-rapidos.jpg" },
-              { text: "Ingredientes simples e acessíveis", image: "/benefit-2-ingredientes-simples.jpg" },
-              { text: "Sem glúten, leite, lácteos e lactose", image: "/benefit-3-sem-gluten.jpg" },
-              { text: "Auxiliam na redução do inchaço e inflamação", image: "/benefit-4-reducao-inchaco.jpg" },
-              { text: "Saciam com menos quantidade", image: "/benefit-5-saciam-menos.jpg" },
-              { text: "Sabor irresistível e autêntico", image: "/benefit-6-sabor-irresistivel.jpg" }
-            ].map((benefit, index) => {
-              console.log('Rendering benefit:', benefit.text, 'Image:', benefit.image);
-              return (
+              { text: "Fáceis e rápidos de preparar", image: benefit1Image },
+              { text: "Ingredientes simples e acessíveis", image: benefit2Image },
+              { text: "Sem glúten, leite, lácteos e lactose", image: benefit3Image },
+              { text: "Auxiliam na redução do inchaço e inflamação", image: benefit4Image },
+              { text: "Saciam com menos quantidade", image: benefit5Image },
+              { text: "Sabor irresistível e autêntico", image: benefit6Image }
+            ].map((benefit, index) => (
               <div key={index} className="bg-card border border-border rounded-xl p-6 hover:shadow-neon transition-all duration-300">
-                <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4 border-2 border-primary">
+                <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4">
                   <img 
                     src={benefit.image} 
                     alt={benefit.text}
                     className="w-full h-full object-cover"
-                    onLoad={() => console.log('Image loaded:', benefit.image)}
-                    onError={() => console.log('Image failed to load:', benefit.image)}
                   />
                 </div>
                 <p className="font-medium text-foreground text-center">{benefit.text}</p>
               </div>
-              );
-            })}
+            ))}
           </div>
         </div>
       </section>
