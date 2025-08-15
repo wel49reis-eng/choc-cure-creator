@@ -271,9 +271,12 @@ export default function LandingPage() {
           <img 
             src={`${guaranteeImage}?v=${Date.now()}`}
             alt="Garantia de 7 dias" 
-            className="w-80 h-80 mx-auto mb-6 object-contain bg-card/30 rounded-2xl p-4"
-            style={{ backgroundColor: 'hsl(var(--card) / 0.3)' }}
-            key={`guarantee-${Date.now()}`}
+            className="w-80 h-80 mx-auto mb-6 object-contain rounded-2xl p-4"
+            style={{ 
+              backgroundColor: 'hsl(var(--background))',
+              border: '1px solid hsl(var(--border))'
+            }}
+            key={`guarantee-${Math.random()}`}
           />
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
             Garantia Incondicional de 
