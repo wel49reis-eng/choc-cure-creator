@@ -335,7 +335,7 @@ export default function LandingPage() {
           <CTABlock 
             currentPrice="R$37"
             buttonText="SIM! Quero Transformar Minha Relação com o Chocolate"
-            className="animate-neon-pulse [&_.cta-button]:min-h-[80px] [&_.cta-button]:py-4"
+            className="animate-neon-pulse [&_.cta-button]:max-w-lg"
           />
           
           <div className="mt-8 flex justify-center items-center gap-6 text-sm text-muted-foreground">
