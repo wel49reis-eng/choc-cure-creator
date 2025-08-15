@@ -11,6 +11,7 @@ export const CTAButton = ({ children, className = "", onClick }: CTAButtonProps)
     <Button
       onClick={onClick}
       className={`
+        cta-button
         w-full max-w-md mx-auto bg-primary text-primary-foreground 
         text-lg font-bold py-6 px-8 rounded-xl 
         shadow-neon hover:shadow-glow-lg
