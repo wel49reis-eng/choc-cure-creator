@@ -270,10 +270,11 @@ export default function LandingPage() {
       <section className="py-20 px-4 bg-card/30">
         <div className="max-w-2xl mx-auto text-center">
           <img 
-            src={guaranteeImage} 
+            src="https://i.postimg.cc/fRV2xfkh/Design-sem-nome-9.png" 
             alt="Garantia de 7 dias" 
             className="w-80 h-80 mx-auto mb-6 object-contain bg-card/30 rounded-2xl p-4"
-            key="guarantee-new-image"
+            onLoad={() => console.log('Nova imagem carregou!')}
+            onError={(e) => console.log('Erro ao carregar nova imagem:', e)}
           />
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
             Garantia Incondicional de 
