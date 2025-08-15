@@ -266,7 +266,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Guarantee */}
+      {/* Guarantee Section - Updated */}
       <section className="py-20 px-4 bg-card/30">
         <div className="max-w-2xl mx-auto text-center">
           <img 
