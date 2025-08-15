@@ -101,18 +101,23 @@ export default function LandingPage() {
               { text: "Auxiliam na redução do inchaço e inflamação", image: "/benefit-4-reducao-inchaco.jpg" },
               { text: "Saciam com menos quantidade", image: "/benefit-5-saciam-menos.jpg" },
               { text: "Sabor irresistível e autêntico", image: "/benefit-6-sabor-irresistivel.jpg" }
-            ].map((benefit, index) => (
+            ].map((benefit, index) => {
+              console.log('Rendering benefit:', benefit.text, 'Image:', benefit.image);
+              return (
               <div key={index} className="bg-card border border-border rounded-xl p-6 hover:shadow-neon transition-all duration-300">
-                <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4">
+                <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4 border-2 border-primary">
                   <img 
                     src={benefit.image} 
                     alt={benefit.text}
                     className="w-full h-full object-cover"
+                    onLoad={() => console.log('Image loaded:', benefit.image)}
+                    onError={() => console.log('Image failed to load:', benefit.image)}
                   />
                 </div>
                 <p className="font-medium text-foreground text-center">{benefit.text}</p>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
