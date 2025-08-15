@@ -27,15 +27,22 @@ export const BackgroundRemovalTool = () => {
       const imageUrl = URL.createObjectURL(processedBlob);
       setProcessedImage(imageUrl);
       
-      // Download the processed image
-      const link = document.createElement('a');
-      link.href = imageUrl;
-      link.download = 'guarantee-7-days-no-bg.png';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      
-      console.log('💾 Download iniciado');
+      // Convert blob to base64 and save as new file
+      const reader = new FileReader();
+      reader.onload = function() {
+        const base64Data = reader.result as string;
+        // Create a download link for the base64 data
+        const link = document.createElement('a');
+        link.href = base64Data;
+        link.download = 'guarantee-7-days-no-bg.png';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        
+        console.log('💾 Nova imagem salva e baixada');
+        alert('Imagem processada! Baixe a nova imagem e substitua manualmente o arquivo guarantee-7-days.jpg por guarantee-7-days-no-bg.png na pasta src/assets/');
+      };
+      reader.readAsDataURL(processedBlob);
       
     } catch (error) {
       console.error('❌ Erro ao remover fundo:', error);
