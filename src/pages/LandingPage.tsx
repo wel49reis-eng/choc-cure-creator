@@ -273,10 +273,7 @@ export default function LandingPage() {
             src={guaranteeImage} 
             alt="Garantia de 7 dias" 
             className="w-80 h-80 mx-auto mb-6 object-contain bg-card/30 rounded-2xl p-4"
-            onError={(e) => {
-              console.log('Erro ao carregar imagem de garantia:', e);
-              e.currentTarget.style.display = 'none';
-            }}
+            key="guarantee-new-image"
           />
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
             Garantia Incondicional de 
