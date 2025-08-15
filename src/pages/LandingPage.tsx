@@ -9,6 +9,7 @@ import carlaAvatar from "@/assets/carla-avatar.jpg";
 import robertaAvatar from "@/assets/roberta-avatar.jpg";
 import fernandaAvatar from "@/assets/fernanda-avatar.jpg";
 import julianaAvatar from "@/assets/juliana-avatar.jpg";
+import guaranteeImage from "@/assets/guarantee-7-days.jpg";
 
 export default function LandingPage() {
   return (
@@ -256,7 +257,11 @@ export default function LandingPage() {
       {/* Guarantee */}
       <section className="py-20 px-4 bg-card/30">
         <div className="max-w-2xl mx-auto text-center">
-          <div className="text-6xl mb-6">🛡️</div>
+          <img 
+            src={guaranteeImage} 
+            alt="Garantia de 7 dias" 
+            className="w-24 h-24 mx-auto mb-6"
+          />
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
             Garantia Incondicional de 
             <span className="text-primary"> 7 Dias</span>
