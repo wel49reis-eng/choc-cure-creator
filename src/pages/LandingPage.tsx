@@ -334,7 +334,7 @@ export default function LandingPage() {
           
           <CTABlock 
             currentPrice="R$37"
-            buttonText="SIM! Quero Transformar Minha Relação com o Chocolate"
+            buttonText="Sim ! Eu Quero Chocolate"
             className="animate-neon-pulse [&_.cta-button]:max-w-lg"
           />
           
