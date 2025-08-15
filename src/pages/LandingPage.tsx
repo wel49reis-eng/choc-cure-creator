@@ -272,7 +272,7 @@ export default function LandingPage() {
           <img 
             src={guaranteeImage} 
             alt="Garantia de 7 dias" 
-            className="w-64 h-64 mx-auto mb-6 object-contain"
+            className="w-80 h-80 mx-auto mb-6 object-contain"
             onError={(e) => {
               console.log('Erro ao carregar imagem de garantia:', e);
               e.currentTarget.style.display = 'none';
