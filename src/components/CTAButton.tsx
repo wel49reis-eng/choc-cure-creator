@@ -12,12 +12,11 @@ export const CTAButton = ({ children, className = "", onClick }: CTAButtonProps)
       onClick={onClick}
       className={`
         w-full max-w-md mx-auto bg-primary text-primary-foreground 
-        text-base font-bold py-6 px-4 rounded-xl 
+        text-lg font-bold py-6 px-8 rounded-xl 
         shadow-neon hover:shadow-glow-lg
         transition-all duration-300 ease-out
         hover:scale-105 hover:brightness-110
         animate-neon-pulse
-        min-h-[100px] flex items-center justify-center text-center
         ${className}
       `}
     >
