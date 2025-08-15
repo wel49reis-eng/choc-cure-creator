@@ -1,6 +1,7 @@
 import { CTABlock } from "@/components/CTABlock";
 import { Testimonial } from "@/components/Testimonial";
 import { FAQItem } from "@/components/FAQItem";
+import { BackgroundRemovalTool } from "@/components/BackgroundRemovalTool";
 import heroImage from "@/assets/hero-chocolate.jpg";
 import chocolateDessertsImage from "@/assets/chocolate-desserts.jpg";
 import marinaAvatar from "@/assets/marina-avatar.jpg";
@@ -14,6 +15,7 @@ import guaranteeImage from "@/assets/guarantee-7-days.jpg";
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <BackgroundRemovalTool />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-4 py-20">
         <div 
