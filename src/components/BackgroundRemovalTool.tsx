@@ -8,13 +8,20 @@ export const BackgroundRemovalTool = () => {
   const [processedImage, setProcessedImage] = useState<string | null>(null);
 
   const handleRemoveBackground = async () => {
+    console.log('🚀 Iniciando processo de remoção de fundo...');
     setIsProcessing(true);
+    
     try {
+      console.log('📷 Carregando imagem:', guaranteeImage);
+      
       // Load the guarantee image
       const img = await loadImageFromUrl(guaranteeImage);
+      console.log('✅ Imagem carregada com sucesso');
       
       // Remove background
+      console.log('🤖 Iniciando processamento com IA...');
       const processedBlob = await removeBackground(img);
+      console.log('✅ Processamento concluído');
       
       // Create object URL for display
       const imageUrl = URL.createObjectURL(processedBlob);
@@ -28,11 +35,14 @@ export const BackgroundRemovalTool = () => {
       link.click();
       document.body.removeChild(link);
       
+      console.log('💾 Download iniciado');
+      
     } catch (error) {
-      console.error('Erro ao remover fundo:', error);
-      alert('Erro ao processar a imagem. Tente novamente.');
+      console.error('❌ Erro ao remover fundo:', error);
+      alert(`Erro ao processar a imagem: ${error.message}`);
     } finally {
       setIsProcessing(false);
+      console.log('🏁 Processo finalizado');
     }
   };
 
