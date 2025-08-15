@@ -10,7 +10,7 @@ import carlaAvatar from "@/assets/carla-avatar.jpg";
 import robertaAvatar from "@/assets/roberta-avatar.jpg";
 import fernandaAvatar from "@/assets/fernanda-avatar.jpg";
 import julianaAvatar from "@/assets/juliana-avatar.jpg";
-import guaranteeImage from "@/assets/guarantee-7-days-no-bg.png";
+import guaranteeImage from "@/assets/guarantee-new.jpg";
 import benefit1Image from "@/assets/benefit-1-faceis-rapidos.jpg";
 import benefit2Image from "@/assets/benefit-2-ingredientes-simples.jpg";
 import benefit3Image from "@/assets/benefit-3-sem-gluten.jpg";
