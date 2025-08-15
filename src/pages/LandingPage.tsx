@@ -336,7 +336,7 @@ export default function LandingPage() {
             currentPrice="R$37"
             buttonText="Sim ! Eu Quero Chocolate"
             className="animate-neon-pulse [&_.cta-button]:max-w-lg"
-          />
+          /> {/* Updated text */}
           
           <div className="mt-8 flex justify-center items-center gap-6 text-sm text-muted-foreground">
             <span className="flex items-center gap-2">
