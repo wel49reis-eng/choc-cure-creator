@@ -266,17 +266,12 @@ export default function LandingPage() {
       </section>
 
       {/* Guarantee Section - Updated */}
-      <section className="py-20 px-4 bg-card/30">
+      <section className="py-20 px-4" style={{ backgroundColor: '#f0f0f0' }}>
         <div className="max-w-2xl mx-auto text-center">
           <img 
-            src={`${guaranteeImage}?v=${Date.now()}`}
+            src={guaranteeImage}
             alt="Garantia de 7 dias" 
-            className="w-80 h-80 mx-auto mb-6 object-contain rounded-2xl p-4"
-            style={{ 
-              backgroundColor: 'hsl(var(--background))',
-              border: '1px solid hsl(var(--border))'
-            }}
-            key={`guarantee-${Math.random()}`}
+            className="w-80 h-80 mx-auto mb-6 object-contain"
           />
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
             Garantia Incondicional de 
