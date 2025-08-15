@@ -10,7 +10,7 @@ import carlaAvatar from "@/assets/carla-avatar.jpg";
 import robertaAvatar from "@/assets/roberta-avatar.jpg";
 import fernandaAvatar from "@/assets/fernanda-avatar.jpg";
 import julianaAvatar from "@/assets/juliana-avatar.jpg";
-import guaranteeImage from "@/assets/guarantee-7-days-clean.png";
+import guaranteeImage from "@/assets/guarantee-7-days-no-bg.png";
 
 export default function LandingPage() {
   return (
