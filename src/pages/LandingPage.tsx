@@ -266,7 +266,7 @@ export default function LandingPage() {
       </section>
 
       {/* Guarantee Section - Updated */}
-      <section className="py-20 px-4" style={{ backgroundColor: '#f0f0f0' }}>
+      <section className="py-20 px-4" style={{ backgroundColor: '#2a2a2a' }}>
         <div className="max-w-2xl mx-auto text-center">
           <img 
             src={guaranteeImage}
