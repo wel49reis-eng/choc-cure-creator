@@ -1,7 +1,7 @@
 import { CTABlock } from "@/components/CTABlock";
 import { Testimonial } from "@/components/Testimonial";
 import { FAQItem } from "@/components/FAQItem";
-import { BackgroundRemovalTool } from "@/components/BackgroundRemovalTool";
+
 import heroImage from "@/assets/hero-chocolate.jpg";
 import chocolateDessertsImage from "@/assets/chocolate-desserts.jpg";
 import marinaAvatar from "@/assets/marina-avatar.jpg";
@@ -21,7 +21,6 @@ import benefit6Image from "@/assets/benefit-6-sabor-irresistivel.jpg";
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <BackgroundRemovalTool />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-4 py-20">
         <div 
@@ -270,10 +269,10 @@ export default function LandingPage() {
       <section className="py-20 px-4 bg-card/30">
         <div className="max-w-2xl mx-auto text-center">
           <img 
-            src="https://i.postimg.cc/fRV2xfkh/Design-sem-nome-9.png" 
-            alt="Garantia de 7 dias" 
+            src={`https://i.postimg.cc/fRV2xfkh/Design-sem-nome-9.png?v=${Date.now()}`}
+            alt="Garantia de 7 dias - Nova" 
             className="w-80 h-80 mx-auto mb-6 object-contain bg-card/30 rounded-2xl p-4"
-            onLoad={() => console.log('Nova imagem carregou!')}
+            onLoad={() => console.log('Nova imagem carregou com sucesso!')}
             onError={(e) => console.log('Erro ao carregar nova imagem:', e)}
           />
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
