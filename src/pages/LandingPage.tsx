@@ -292,10 +292,11 @@ export default function LandingPage() {
             <div className="text-3xl font-bold text-muted-foreground mb-4">
               Valor total: <span className="line-through">R$471,00</span>
             </div>
-            <CTABlock 
-              currentPrice="R$19,90"
-              buttonText="Quero meu Cacau Sem Culpa agora"
-            />
+          <CTABlock 
+            currentPrice="R$19,90"
+            buttonText="Quero meu Cacau Sem Culpa agora"
+            onCtaClick={scrollToCheckout}
+          />
           </div>
         </div>
       </section>
@@ -379,7 +380,7 @@ export default function LandingPage() {
               </div>
 
               <button 
-                onClick={scrollToCheckout}
+                onClick={() => window.open('https://pay.herospark.com/cacau-sem-culpa-o-prazer-do-chocolate-no-caminho-para-o-emagrecimento-447787', '_blank')}
                 className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-bold py-4 px-8 rounded-xl text-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
                 Quero Esta Oferta!
@@ -454,7 +455,7 @@ export default function LandingPage() {
               </div>
 
               <button 
-                onClick={scrollToCheckout}
+                onClick={() => window.open('https://pay.herospark.com/cacau-sem-culpa-master-449054', '_blank')}
                 className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-4 px-8 rounded-xl text-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
                 Quero o Premium Agora!
@@ -522,6 +523,7 @@ export default function LandingPage() {
             currentPrice="R$19,90"
             buttonText="Sim ! Eu Quero Chocolate"
             className="animate-neon-pulse [&_.cta-button]:max-w-lg"
+            onCtaClick={scrollToCheckout}
           />
           
           <div className="mt-8 flex justify-center items-center gap-6 text-sm text-muted-foreground">

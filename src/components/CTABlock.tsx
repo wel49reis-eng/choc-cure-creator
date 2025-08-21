@@ -6,13 +6,15 @@ interface CTABlockProps {
   currentPrice: string;
   buttonText: string;
   className?: string;
+  onCtaClick?: () => void;
 }
 
 export const CTABlock = ({ 
   originalPrice = "R$471,00", 
   currentPrice, 
   buttonText, 
-  className = "" 
+  className = "",
+  onCtaClick
 }: CTABlockProps) => {
   return (
     <div className={`bg-card border border-border rounded-2xl p-8 shadow-neon-pink max-w-md mx-auto ${className}`}>
@@ -20,7 +22,7 @@ export const CTABlock = ({
         originalPrice={originalPrice}
         currentPrice={currentPrice}
       />
-      <CTAButton>
+      <CTAButton onClick={onCtaClick}>
         {buttonText}
       </CTAButton>
       <div className="flex justify-center items-center gap-4 mt-6 text-sm text-muted-foreground">
