@@ -1,6 +1,9 @@
 import { CTABlock } from "@/components/CTABlock";
 import { Testimonial } from "@/components/Testimonial";
 import { FAQItem } from "@/components/FAQItem";
+import { CountdownTimer } from "@/components/CountdownTimer";
+import { VSLSection } from "@/components/VSLSection";
+import { CheckoutSection } from "@/components/CheckoutSection";
 
 import heroImage from "@/assets/hero-chocolate.jpg";
 import chocolateDessertsImage from "@/assets/chocolate-desserts.jpg";
@@ -19,10 +22,45 @@ import benefit5Image from "@/assets/benefit-5-saciam-menos.jpg";
 import benefit6Image from "@/assets/benefit-6-sabor-irresistivel.jpg";
 
 export default function LandingPage() {
+  const scrollToCheckout = () => {
+    const checkoutSection = document.getElementById('checkout-section');
+    if (checkoutSection) {
+      checkoutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const premiumItems = [
+    { title: "1º E-Book - Introdução ao Método" },
+    { title: "BÔNUS: Manual Pessoal de Chocolate Saudável" },
+    { title: "BÔNUS: Como Adoçar Doces Saudáveis" },
+    { title: "BÔNUS: Mix de Farinha Sem Glúten - Doce que Faz Bem" },
+    { title: "BÔNUS: Adoçantes Naturais para Adaptar as Receitas" },
+    { title: "2º E-Book - 40 Receitas de Bolos sem Lactose, Glúten e Açúcar" },
+    { title: "3º E-Book - O Chocolate 1% Cacau e o Controle de Apetite" },
+    { title: "4º E-Book - O Segredo do Cacau: Como o Chocolate Ajuda a Queimar Gordura" },
+    { title: "5º E-Book - Plano de 7 dias do Chocolate Emagrecedor" },
+    { title: "6º E-Book - Choco Detox: Como Usar Chocolate para Desinflamar e Secar a Barriga" }
+  ];
+
+  const basicItems = [
+    { title: "1º E-Book - Introdução ao Método" },
+    { title: "BÔNUS: Manual Pessoal de Chocolate Saudável" },
+    { title: "BÔNUS: Como Adoçar Doces Saudáveis" },
+    { title: "BÔNUS: Mix de Farinha Sem Glúten - Doce que Faz Bem" },
+    { title: "BÔNUS: Adoçantes Naturais para Adaptar as Receitas" },
+    { title: "2º E-Book - 40 Receitas de Bolos sem Lactose, Glúten e Açúcar", isStrikethrough: true },
+    { title: "3º E-Book - O Chocolate 1% Cacau e o Controle de Apetite", isStrikethrough: true },
+    { title: "4º E-Book - O Segredo do Cacau: Como o Chocolate Ajuda a Queimar Gordura", isStrikethrough: true },
+    { title: "5º E-Book - Plano de 7 dias do Chocolate Emagrecedor", isStrikethrough: true },
+    { title: "6º E-Book - Choco Detox: Como Usar Chocolate para Desinflamar e Secar a Barriga", isStrikethrough: true }
+  ];
+
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <CountdownTimer />
+      
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-4 py-20">
+      <section className="relative min-h-screen flex items-center justify-center px-4 py-20 pt-32">
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-30"
           style={{ backgroundImage: `url(${heroImage})` }}
@@ -53,11 +91,7 @@ export default function LandingPage() {
             </span>
           </div>
 
-          <CTABlock 
-            currentPrice="R$37"
-            buttonText="Quero meu Cacau Sem Culpa agora"
-            className="animate-float"
-          />
+          <VSLSection onCtaClick={scrollToCheckout} />
         </div>
       </section>
 
@@ -129,7 +163,7 @@ export default function LandingPage() {
             O Que Minhas Alunas Dizem
           </h2>
           <p className="text-center text-accent text-xl font-semibold mb-12">
-            +14.000 alunas em 55 países
+            +29.000 alunas em 60 países
           </p>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -258,7 +292,7 @@ export default function LandingPage() {
               Valor total: <span className="line-through">R$471,00</span>
             </div>
             <CTABlock 
-              currentPrice="R$37"
+              currentPrice="R$19,90"
               buttonText="Quero meu Cacau Sem Culpa agora"
             />
           </div>
@@ -276,6 +310,37 @@ export default function LandingPage() {
             Experimente todas as receitas. Se não ficar completamente satisfeita, 
             devolvemos 100% do seu dinheiro sem perguntas e sem burocracia.
           </p>
+        </div>
+      </section>
+
+      {/* Checkout Section */}
+      <section id="checkout-section" className="py-20 px-4 bg-gradient-to-r from-purple-900/20 via-blue-900/20 to-indigo-900/20">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
+            Escolha Sua Oferta Especial
+          </h2>
+          
+          <div className="grid lg:grid-cols-2 gap-8">
+            <CheckoutSection
+              title="Cacau Sem Culpa - Premium"
+              items={premiumItems}
+              price="R$19,90"
+              buttonText="Quero o Premium Agora!"
+              bgColor="bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-950/30 dark:to-red-950/30"
+              headerColor="bg-gradient-to-r from-orange-600 to-red-600"
+              onCtaClick={scrollToCheckout}
+            />
+            
+            <CheckoutSection
+              title="Cacau Sem Culpa"
+              items={basicItems}
+              price="R$37,90"
+              buttonText="Quero Esta Oferta!"
+              bgColor="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-950/30 dark:to-purple-950/30"
+              headerColor="bg-gradient-to-r from-blue-600 to-purple-600"
+              onCtaClick={scrollToCheckout}
+            />
+          </div>
         </div>
       </section>
 
@@ -319,14 +384,14 @@ export default function LandingPage() {
             <span className="text-primary"> Sem Culpa?</span>
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Oferta especial de R$37 — só hoje!
+            Oferta especial de R$19,90 — só hoje!
           </p>
           
           <CTABlock 
-            currentPrice="R$37"
+            currentPrice="R$19,90"
             buttonText="Sim ! Eu Quero Chocolate"
             className="animate-neon-pulse [&_.cta-button]:max-w-lg"
-          /> {/* Updated text */}
+          />
           
           <div className="mt-8 flex justify-center items-center gap-6 text-sm text-muted-foreground">
             <span className="flex items-center gap-2">
