@@ -322,82 +322,7 @@ export default function LandingPage() {
           </h2>
           
           <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* Premium Checkout */}
-            <div className="bg-gradient-to-br from-orange-100 to-red-100 dark:from-orange-900/50 dark:to-red-900/50 border-4 border-orange-500 rounded-2xl p-8 shadow-xl">
-              <div className="bg-gradient-to-r from-orange-600 to-red-600 text-white text-center py-6 px-8 rounded-xl mb-8 font-bold text-2xl shadow-lg">
-                Cacau Sem Culpa - Premium
-              </div>
-              
-              <div className="space-y-4 mb-8 text-gray-800 dark:text-gray-200">
-                <div className="flex items-start gap-3 text-base font-medium">
-                  <span className="text-green-500 text-xl">✅</span>
-                  <span>1º E-Book - Introdução ao Método</span>
-                </div>
-                <div className="flex items-start gap-3 text-base font-medium">
-                  <span className="text-green-500 text-xl">✅</span>
-                  <span>BÔNUS: Manual Pessoal de Chocolate Saudável</span>
-                </div>
-                <div className="flex items-start gap-3 text-base font-medium">
-                  <span className="text-green-500 text-xl">✅</span>
-                  <span>BÔNUS: Como Adoçar Doces Saudáveis</span>
-                </div>
-                <div className="flex items-start gap-3 text-base font-medium">
-                  <span className="text-green-500 text-xl">✅</span>
-                  <span>BÔNUS: Mix de Farinha Sem Glúten - Doce que Faz Bem</span>
-                </div>
-                <div className="flex items-start gap-3 text-base font-medium">
-                  <span className="text-green-500 text-xl">✅</span>
-                  <span>BÔNUS: Adoçantes Naturais para Adaptar as Receitas</span>
-                </div>
-                <div className="flex items-start gap-3 text-base font-medium">
-                  <span className="text-green-500 text-xl">✅</span>
-                  <span>2º E-Book - 40 Receitas de Bolos sem Lactose, Glúten e Açúcar</span>
-                </div>
-                <div className="flex items-start gap-3 text-base font-medium">
-                  <span className="text-green-500 text-xl">✅</span>
-                  <span>3º E-Book - O Chocolate 1% Cacau e o Controle de Apetite</span>
-                </div>
-                <div className="flex items-start gap-3 text-base font-medium">
-                  <span className="text-green-500 text-xl">✅</span>
-                  <span>4º E-Book - O Segredo do Cacau: Como o Chocolate Ajuda a Queimar Gordura</span>
-                </div>
-                <div className="flex items-start gap-3 text-base font-medium">
-                  <span className="text-green-500 text-xl">✅</span>
-                  <span>5º E-Book - Plano de 7 dias do Chocolate Emagrecedor</span>
-                </div>
-                <div className="flex items-start gap-3 text-base font-medium">
-                  <span className="text-green-500 text-xl">✅</span>
-                  <span>6º E-Book - Choco Detox: Como Usar Chocolate para Desinflamar e Secar a Barriga</span>
-                </div>
-              </div>
-
-              <div className="text-center mb-8">
-                <div className="text-4xl font-bold text-orange-600 mb-3">Apenas R$19,90</div>
-                <div className="text-lg text-gray-600 dark:text-gray-400">
-                  <span className="line-through">R$471,00</span>
-                </div>
-              </div>
-
-              <button 
-                onClick={scrollToCheckout}
-                className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-4 px-8 rounded-xl text-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-              >
-                Quero o Premium Agora!
-              </button>
-
-              <div className="flex justify-center items-center gap-6 mt-6 text-sm text-gray-600 dark:text-gray-400">
-                <div className="flex items-center gap-2">
-                  <div className="w-4 h-4 bg-green-500 rounded-full animate-pulse"></div>
-                  <span>Garantia 7 dias</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-4 h-4 bg-blue-500 rounded-full animate-pulse"></div>
-                  <span>Acesso vitalício</span>
-                </div>
-              </div>
-            </div>
-            
-            {/* Basic Checkout */}
+            {/* Basic Checkout - LEFT SIDE */}
             <div className="bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/50 dark:to-purple-900/50 border-4 border-blue-500 rounded-2xl p-8 shadow-xl">
               <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center py-6 px-8 rounded-xl mb-8 font-bold text-2xl shadow-lg">
                 Cacau Sem Culpa
@@ -447,7 +372,7 @@ export default function LandingPage() {
               </div>
 
               <div className="text-center mb-8">
-                <div className="text-4xl font-bold text-blue-600 mb-3">Apenas R$37,90</div>
+                <div className="text-4xl font-bold text-blue-600 mb-3">Apenas R$19,90</div>
                 <div className="text-lg text-gray-600 dark:text-gray-400">
                   <span className="line-through">R$471,00</span>
                 </div>
@@ -458,6 +383,81 @@ export default function LandingPage() {
                 className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-bold py-4 px-8 rounded-xl text-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
                 Quero Esta Oferta!
+              </button>
+
+              <div className="flex justify-center items-center gap-6 mt-6 text-sm text-gray-600 dark:text-gray-400">
+                <div className="flex items-center gap-2">
+                  <div className="w-4 h-4 bg-green-500 rounded-full animate-pulse"></div>
+                  <span>Garantia 7 dias</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-4 h-4 bg-blue-500 rounded-full animate-pulse"></div>
+                  <span>Acesso vitalício</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Premium Checkout - RIGHT SIDE */}
+            <div className="bg-gradient-to-br from-orange-100 to-red-100 dark:from-orange-900/50 dark:to-red-900/50 border-4 border-orange-500 rounded-2xl p-8 shadow-xl">
+              <div className="bg-gradient-to-r from-orange-600 to-red-600 text-white text-center py-6 px-8 rounded-xl mb-8 font-bold text-2xl shadow-lg">
+                Cacau Sem Culpa - Premium
+              </div>
+              
+              <div className="space-y-4 mb-8 text-gray-800 dark:text-gray-200">
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>1º E-Book - Introdução ao Método</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>BÔNUS: Manual Pessoal de Chocolate Saudável</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>BÔNUS: Como Adoçar Doces Saudáveis</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>BÔNUS: Mix de Farinha Sem Glúten - Doce que Faz Bem</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>BÔNUS: Adoçantes Naturais para Adaptar as Receitas</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>2º E-Book - 40 Receitas de Bolos sem Lactose, Glúten e Açúcar</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>3º E-Book - O Chocolate 1% Cacau e o Controle de Apetite</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>4º E-Book - O Segredo do Cacau: Como o Chocolate Ajuda a Queimar Gordura</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>5º E-Book - Plano de 7 dias do Chocolate Emagrecedor</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>6º E-Book - Choco Detox: Como Usar Chocolate para Desinflamar e Secar a Barriga</span>
+                </div>
+              </div>
+
+              <div className="text-center mb-8">
+                <div className="text-4xl font-bold text-orange-600 mb-3">Apenas R$37,90</div>
+                <div className="text-lg text-gray-600 dark:text-gray-400">
+                  <span className="line-through">R$471,00</span>
+                </div>
+              </div>
+
+              <button 
+                onClick={scrollToCheckout}
+                className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-4 px-8 rounded-xl text-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              >
+                Quero o Premium Agora!
               </button>
 
               <div className="flex justify-center items-center gap-6 mt-6 text-sm text-gray-600 dark:text-gray-400">
