@@ -323,36 +323,69 @@ export default function LandingPage() {
           
           <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Premium Checkout */}
-            <div className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-900/30 dark:to-red-900/30 border-2 border-orange-500 rounded-2xl p-6 shadow-lg">
-              <div className="bg-gradient-to-r from-orange-600 to-red-600 text-white text-center py-4 px-6 rounded-xl mb-6 font-bold text-xl">
+            <div className="bg-gradient-to-br from-orange-100 to-red-100 dark:from-orange-900/50 dark:to-red-900/50 border-4 border-orange-500 rounded-2xl p-8 shadow-xl">
+              <div className="bg-gradient-to-r from-orange-600 to-red-600 text-white text-center py-6 px-8 rounded-xl mb-8 font-bold text-2xl shadow-lg">
                 Cacau Sem Culpa - Premium
               </div>
               
-              <div className="space-y-3 mb-6">
-                <div className="text-foreground text-sm leading-relaxed">✅ 1º E-Book - Introdução ao Método</div>
-                <div className="text-foreground text-sm leading-relaxed">✅ BÔNUS: Manual Pessoal de Chocolate Saudável</div>
-                <div className="text-foreground text-sm leading-relaxed">✅ BÔNUS: Como Adoçar Doces Saudáveis</div>
-                <div className="text-foreground text-sm leading-relaxed">✅ BÔNUS: Mix de Farinha Sem Glúten - Doce que Faz Bem</div>
-                <div className="text-foreground text-sm leading-relaxed">✅ BÔNUS: Adoçantes Naturais para Adaptar as Receitas</div>
-                <div className="text-foreground text-sm leading-relaxed">✅ 2º E-Book - 40 Receitas de Bolos sem Lactose, Glúten e Açúcar</div>
-                <div className="text-foreground text-sm leading-relaxed">✅ 3º E-Book - O Chocolate 1% Cacau e o Controle de Apetite</div>
-                <div className="text-foreground text-sm leading-relaxed">✅ 4º E-Book - O Segredo do Cacau: Como o Chocolate Ajuda a Queimar Gordura</div>
-                <div className="text-foreground text-sm leading-relaxed">✅ 5º E-Book - Plano de 7 dias do Chocolate Emagrecedor</div>
-                <div className="text-foreground text-sm leading-relaxed">✅ 6º E-Book - Choco Detox: Como Usar Chocolate para Desinflamar e Secar a Barriga</div>
+              <div className="space-y-4 mb-8 text-gray-800 dark:text-gray-200">
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>1º E-Book - Introdução ao Método</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>BÔNUS: Manual Pessoal de Chocolate Saudável</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>BÔNUS: Como Adoçar Doces Saudáveis</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>BÔNUS: Mix de Farinha Sem Glúten - Doce que Faz Bem</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>BÔNUS: Adoçantes Naturais para Adaptar as Receitas</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>2º E-Book - 40 Receitas de Bolos sem Lactose, Glúten e Açúcar</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>3º E-Book - O Chocolate 1% Cacau e o Controle de Apetite</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>4º E-Book - O Segredo do Cacau: Como o Chocolate Ajuda a Queimar Gordura</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>5º E-Book - Plano de 7 dias do Chocolate Emagrecedor</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>6º E-Book - Choco Detox: Como Usar Chocolate para Desinflamar e Secar a Barriga</span>
+                </div>
               </div>
 
-              <div className="text-center mb-6">
-                <div className="text-3xl font-bold text-orange-600 mb-2">Apenas R$19,90</div>
-                <div className="text-sm text-muted-foreground">
+              <div className="text-center mb-8">
+                <div className="text-4xl font-bold text-orange-600 mb-3">Apenas R$19,90</div>
+                <div className="text-lg text-gray-600 dark:text-gray-400">
                   <span className="line-through">R$471,00</span>
                 </div>
               </div>
 
-              <CTAButton onClick={scrollToCheckout}>
+              <button 
+                onClick={scrollToCheckout}
+                className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-4 px-8 rounded-xl text-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              >
                 Quero o Premium Agora!
-              </CTAButton>
+              </button>
 
-              <div className="flex justify-center items-center gap-4 mt-6 text-sm text-muted-foreground">
+              <div className="flex justify-center items-center gap-6 mt-6 text-sm text-gray-600 dark:text-gray-400">
                 <div className="flex items-center gap-2">
                   <div className="w-4 h-4 bg-green-500 rounded-full animate-pulse"></div>
                   <span>Garantia 7 dias</span>
@@ -365,36 +398,69 @@ export default function LandingPage() {
             </div>
             
             {/* Basic Checkout */}
-            <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 border-2 border-blue-500 rounded-2xl p-6 shadow-lg">
-              <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center py-4 px-6 rounded-xl mb-6 font-bold text-xl">
+            <div className="bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/50 dark:to-purple-900/50 border-4 border-blue-500 rounded-2xl p-8 shadow-xl">
+              <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center py-6 px-8 rounded-xl mb-8 font-bold text-2xl shadow-lg">
                 Cacau Sem Culpa
               </div>
               
-              <div className="space-y-3 mb-6">
-                <div className="text-foreground text-sm leading-relaxed">✅ 1º E-Book - Introdução ao Método</div>
-                <div className="text-foreground text-sm leading-relaxed">✅ BÔNUS: Manual Pessoal de Chocolate Saudável</div>
-                <div className="text-foreground text-sm leading-relaxed">✅ BÔNUS: Como Adoçar Doces Saudáveis</div>
-                <div className="text-foreground text-sm leading-relaxed">✅ BÔNUS: Mix de Farinha Sem Glúten - Doce que Faz Bem</div>
-                <div className="text-foreground text-sm leading-relaxed">✅ BÔNUS: Adoçantes Naturais para Adaptar as Receitas</div>
-                <div className="text-foreground text-sm leading-relaxed line-through opacity-60">❌ 2º E-Book - 40 Receitas de Bolos sem Lactose, Glúten e Açúcar</div>
-                <div className="text-foreground text-sm leading-relaxed line-through opacity-60">❌ 3º E-Book - O Chocolate 1% Cacau e o Controle de Apetite</div>
-                <div className="text-foreground text-sm leading-relaxed line-through opacity-60">❌ 4º E-Book - O Segredo do Cacau: Como o Chocolate Ajuda a Queimar Gordura</div>
-                <div className="text-foreground text-sm leading-relaxed line-through opacity-60">❌ 5º E-Book - Plano de 7 dias do Chocolate Emagrecedor</div>
-                <div className="text-foreground text-sm leading-relaxed line-through opacity-60">❌ 6º E-Book - Choco Detox: Como Usar Chocolate para Desinflamar e Secar a Barriga</div>
+              <div className="space-y-4 mb-8 text-gray-800 dark:text-gray-200">
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>1º E-Book - Introdução ao Método</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>BÔNUS: Manual Pessoal de Chocolate Saudável</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>BÔNUS: Como Adoçar Doces Saudáveis</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>BÔNUS: Mix de Farinha Sem Glúten - Doce que Faz Bem</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium">
+                  <span className="text-green-500 text-xl">✅</span>
+                  <span>BÔNUS: Adoçantes Naturais para Adaptar as Receitas</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium line-through opacity-50">
+                  <span className="text-red-500 text-xl">❌</span>
+                  <span>2º E-Book - 40 Receitas de Bolos sem Lactose, Glúten e Açúcar</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium line-through opacity-50">
+                  <span className="text-red-500 text-xl">❌</span>
+                  <span>3º E-Book - O Chocolate 1% Cacau e o Controle de Apetite</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium line-through opacity-50">
+                  <span className="text-red-500 text-xl">❌</span>
+                  <span>4º E-Book - O Segredo do Cacau: Como o Chocolate Ajuda a Queimar Gordura</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium line-through opacity-50">
+                  <span className="text-red-500 text-xl">❌</span>
+                  <span>5º E-Book - Plano de 7 dias do Chocolate Emagrecedor</span>
+                </div>
+                <div className="flex items-start gap-3 text-base font-medium line-through opacity-50">
+                  <span className="text-red-500 text-xl">❌</span>
+                  <span>6º E-Book - Choco Detox: Como Usar Chocolate para Desinflamar e Secar a Barriga</span>
+                </div>
               </div>
 
-              <div className="text-center mb-6">
-                <div className="text-3xl font-bold text-blue-600 mb-2">Apenas R$37,90</div>
-                <div className="text-sm text-muted-foreground">
+              <div className="text-center mb-8">
+                <div className="text-4xl font-bold text-blue-600 mb-3">Apenas R$37,90</div>
+                <div className="text-lg text-gray-600 dark:text-gray-400">
                   <span className="line-through">R$471,00</span>
                 </div>
               </div>
 
-              <CTAButton onClick={scrollToCheckout}>
+              <button 
+                onClick={scrollToCheckout}
+                className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-bold py-4 px-8 rounded-xl text-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              >
                 Quero Esta Oferta!
-              </CTAButton>
+              </button>
 
-              <div className="flex justify-center items-center gap-4 mt-6 text-sm text-muted-foreground">
+              <div className="flex justify-center items-center gap-6 mt-6 text-sm text-gray-600 dark:text-gray-400">
                 <div className="flex items-center gap-2">
                   <div className="w-4 h-4 bg-green-500 rounded-full animate-pulse"></div>
                   <span>Garantia 7 dias</span>
