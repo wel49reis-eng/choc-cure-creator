@@ -13,7 +13,7 @@ export const VSLSection = ({ onCtaClick }: VSLSectionProps) => {
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1"
+            src="https://www.youtube.com/embed/aXwIGan9yEc?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1"
             title="Cacau Sem Culpa - VSL"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -39,7 +39,7 @@ export const VSLSection = ({ onCtaClick }: VSLSectionProps) => {
           </div>
           
           <CTAButton onClick={onCtaClick}>
-            Quero meu Cacau Sem Culpa agora por R$19,90!
+            Quero meu Cacau agora
           </CTAButton>
           
           <div className="flex justify-center items-center gap-4 mt-4 text-sm text-muted-foreground">
