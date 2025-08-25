@@ -119,7 +119,13 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
-  body {
+  html {
     @apply bg-background text-foreground;
+  }
+
+  body {
+    @apply bg-background text-foreground min-h-screen;
+    background-color: hsl(220 20% 8%);
+    color: hsl(0 0% 98%);
   }
 }
