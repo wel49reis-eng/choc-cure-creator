@@ -293,7 +293,7 @@ export default function LandingPage() {
             </div>
           <CTABlock 
             currentPrice="R$19,90"
-            buttonText="Quero meu Cacau Sem Culpa agora"
+            buttonText="Quero meu Cacau"
             onCtaClick={scrollToCheckout}
           />
           </div>
