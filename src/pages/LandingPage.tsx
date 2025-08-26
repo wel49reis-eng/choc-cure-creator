@@ -44,6 +44,20 @@ export default function LandingPage() {
     window.open('https://pay.herospark.com/cacau-sem-culpa-o-prazer-do-chocolate-no-caminho-para-o-emagrecimento-447787', '_blank');
   };
 
+  const handleCTAWithScroll = () => {
+    // Facebook Pixel - Lead event
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'Lead', {
+        content_name: 'Cacau Sem Culpa CTA',
+        value: 19.90,
+        currency: 'BRL'
+      });
+    }
+    
+    // Scroll to checkout
+    scrollToCheckout();
+  };
+
   const handlePremiumCheckout = () => {
     // Facebook Pixel - Lead event
     if (typeof window !== 'undefined' && (window as any).fbq) {
@@ -322,7 +336,7 @@ export default function LandingPage() {
           <CTABlock 
             currentPrice="R$19,90"
             buttonText="Quero meu Cacau"
-            onCtaClick={handleBasicCheckout}
+            onCtaClick={handleCTAWithScroll}
           />
           </div>
         </div>
@@ -550,7 +564,7 @@ export default function LandingPage() {
             currentPrice="R$19,90"
             buttonText="Sim ! Eu Quero Chocolate"
             className="animate-neon-pulse [&_.cta-button]:max-w-lg"
-            onCtaClick={handleBasicCheckout}
+            onCtaClick={handleCTAWithScroll}
           />
           
           <div className="mt-8 flex justify-center items-center gap-6 text-sm text-muted-foreground">
