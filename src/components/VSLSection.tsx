@@ -38,7 +38,17 @@ export const VSLSection = ({ onCtaClick }: VSLSectionProps) => {
             </div>
           </div>
           
-          <CTAButton onClick={onCtaClick}>
+          <CTAButton onClick={() => {
+            // Facebook Pixel tracking
+            if (typeof window !== 'undefined' && (window as any).fbq) {
+              (window as any).fbq('track', 'Lead', {
+                content_name: 'Cacau Sem Culpa VSL',
+                value: 19.90,
+                currency: 'BRL'
+              });
+            }
+            onCtaClick();
+          }}>
             Quero meu Cacau agora
           </CTAButton>
           

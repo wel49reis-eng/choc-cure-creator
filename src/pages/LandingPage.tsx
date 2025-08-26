@@ -30,6 +30,34 @@ export default function LandingPage() {
     }
   };
 
+  const handleBasicCheckout = () => {
+    // Facebook Pixel - Lead event
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'Lead', {
+        content_name: 'Cacau Sem Culpa Básico',
+        value: 19.90,
+        currency: 'BRL'
+      });
+    }
+    
+    // Redirect to payment
+    window.open('https://pay.herospark.com/cacau-sem-culpa-o-prazer-do-chocolate-no-caminho-para-o-emagrecimento-447787', '_blank');
+  };
+
+  const handlePremiumCheckout = () => {
+    // Facebook Pixel - Lead event
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'Lead', {
+        content_name: 'Cacau Sem Culpa Premium',
+        value: 37.90,
+        currency: 'BRL'
+      });
+    }
+    
+    // Redirect to payment
+    window.open('https://pay.herospark.com/cacau-sem-culpa-master-449054', '_blank');
+  };
+
   const premiumItems = [
     { title: "1º E-Book - Introdução ao Método" },
     { title: "BÔNUS: Manual Pessoal de Chocolate Saudável" },
@@ -294,7 +322,7 @@ export default function LandingPage() {
           <CTABlock 
             currentPrice="R$19,90"
             buttonText="Quero meu Cacau"
-            onCtaClick={scrollToCheckout}
+            onCtaClick={handleBasicCheckout}
           />
           </div>
         </div>
@@ -379,7 +407,7 @@ export default function LandingPage() {
               </div>
 
               <button 
-                onClick={() => window.open('https://pay.herospark.com/cacau-sem-culpa-o-prazer-do-chocolate-no-caminho-para-o-emagrecimento-447787', '_blank')}
+                onClick={handleBasicCheckout}
                 className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-xl text-lg sm:text-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
                 Quero Esta Oferta!
@@ -454,7 +482,7 @@ export default function LandingPage() {
               </div>
 
               <button 
-                onClick={() => window.open('https://pay.herospark.com/cacau-sem-culpa-master-449054', '_blank')}
+                onClick={handlePremiumCheckout}
                 className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-xl text-lg sm:text-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
                 Quero o Premium Agora!
@@ -522,7 +550,7 @@ export default function LandingPage() {
             currentPrice="R$19,90"
             buttonText="Sim ! Eu Quero Chocolate"
             className="animate-neon-pulse [&_.cta-button]:max-w-lg"
-            onCtaClick={scrollToCheckout}
+            onCtaClick={handleBasicCheckout}
           />
           
           <div className="mt-8 flex justify-center items-center gap-6 text-sm text-muted-foreground">
