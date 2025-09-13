@@ -373,7 +373,7 @@ export default function LandingPage() {
               <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8 text-gray-800 dark:text-gray-200">
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
                   <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
-                  <span>1º E-Book - Introdução ao Método</span>
+                  <span>Guia : Introdução ao Método : Cacau Sem Culpa</span>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
                   <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
