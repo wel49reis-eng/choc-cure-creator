@@ -63,7 +63,7 @@ export default function LandingPage() {
     if (typeof window !== 'undefined' && (window as any).fbq) {
       (window as any).fbq('track', 'Lead', {
         content_name: 'Cacau Sem Culpa Premium',
-        value: 37.90,
+        value: 19.90,
         currency: 'BRL'
       });
     }
