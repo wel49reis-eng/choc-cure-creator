@@ -10,7 +10,7 @@ interface CTABlockProps {
 }
 
 export const CTABlock = ({ 
-  originalPrice = "R$471,00", 
+  originalPrice = "R$199,90", 
   currentPrice, 
   buttonText, 
   className = "",

@@ -331,7 +331,7 @@ export default function LandingPage() {
 
           <div className="text-center mb-12">
             <div className="text-3xl font-bold text-muted-foreground mb-4">
-              Valor total: <span className="line-through">R$471,00</span>
+              Valor total: <span className="line-through">R$199,90</span>
             </div>
           <CTABlock 
             currentPrice="R$10,00"
@@ -440,7 +440,7 @@ export default function LandingPage() {
               <div className="text-center mb-6 sm:mb-8">
                 <div className="text-3xl sm:text-4xl font-bold text-blue-600 mb-2 sm:mb-3">Apenas R$10,00</div>
                 <div className="text-base sm:text-lg text-gray-600 dark:text-gray-400">
-                  <span className="line-through">R$471,00</span>
+                  <span className="line-through">R$199,90</span>
                 </div>
               </div>
 
