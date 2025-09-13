@@ -375,29 +375,17 @@ export default function LandingPage() {
                   <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
                   <span>Guia : Introdução ao Método : Cacau Sem Culpa</span>
                 </div>
-                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
-                  <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
-                  <span>Receitas para Redução de Peso</span>
-                </div>
-                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
-                  <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
-                  <span>Dicas para Bolo de Chocolate Fit :</span>
-                </div>
-                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium ml-4">
-                  <span>1. FARINHAS ALTERNATIVAS</span>
-                </div>
-                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium ml-4">
-                  <span>2. GORDURAS SAUDÁVEIS</span>
-                </div>
-                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium ml-4">
-                  <span>3. ADOÇANTES NATURAIS</span>
-                </div>
-                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium ml-4">
-                  <span>4. UMIDADE NATURAL</span>
-                </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium bg-green-100 dark:bg-green-900/20 p-3 rounded-lg border-l-4 border-green-500">
                   <span className="text-green-500 text-lg sm:text-xl flex-shrink-0 font-bold">✅</span>
                   <span className="font-bold text-green-700 dark:text-green-300">Garantia Incondicional de 7 Dias</span>
+                </div>
+                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium line-through opacity-50">
+                  <span className="text-red-500 text-lg sm:text-xl flex-shrink-0">❌</span>
+                  <span>Receitas para Redução de Peso</span>
+                </div>
+                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium line-through opacity-50">
+                  <span className="text-red-500 text-lg sm:text-xl flex-shrink-0">❌</span>
+                  <span>Dicas para Bolo de Chocolate Fit</span>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium line-through opacity-50">
                   <span className="text-red-500 text-lg sm:text-xl flex-shrink-0">❌</span>
@@ -472,7 +460,31 @@ export default function LandingPage() {
               <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8 text-gray-800 dark:text-gray-200">
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
                   <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
-                  <span>1º E-Book - Introdução ao Método</span>
+                  <span>Guia : Introdução ao Método : Cacau Sem Culpa</span>
+                </div>
+                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
+                  <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
+                  <span>Receitas para Redução de Peso</span>
+                </div>
+                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
+                  <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
+                  <span>Dicas para Bolo de Chocolate Fit :</span>
+                </div>
+                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium ml-4">
+                  <span>1. FARINHAS ALTERNATIVAS</span>
+                </div>
+                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium ml-4">
+                  <span>2. GORDURAS SAUDÁVEIS</span>
+                </div>
+                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium ml-4">
+                  <span>3. ADOÇANTES NATURAIS</span>
+                </div>
+                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium ml-4">
+                  <span>4. UMIDADE NATURAL</span>
+                </div>
+                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium bg-green-100 dark:bg-green-900/20 p-3 rounded-lg border-l-4 border-green-500">
+                  <span className="text-green-500 text-lg sm:text-xl flex-shrink-0 font-bold">✅</span>
+                  <span className="font-bold text-green-700 dark:text-green-300">Garantia Incondicional de 7 Dias</span>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
                   <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
@@ -513,9 +525,9 @@ export default function LandingPage() {
               </div>
 
               <div className="text-center mb-6 sm:mb-8">
-                <div className="text-3xl sm:text-4xl font-bold text-orange-600 mb-2 sm:mb-3">Apenas R$37,90</div>
+                <div className="text-3xl sm:text-4xl font-bold text-orange-600 mb-2 sm:mb-3">Apenas R$19,90</div>
                 <div className="text-base sm:text-lg text-gray-600 dark:text-gray-400">
-                  <span className="line-through">R$471,00</span>
+                  <span className="line-through">R$799,00</span>
                 </div>
               </div>
 
