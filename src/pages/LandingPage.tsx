@@ -69,7 +69,7 @@ export default function LandingPage() {
     }
     
     // Redirect to payment
-    window.open('https://pay.herospark.com/cacau-sem-culpa-master-449054', '_blank');
+    window.open('https://pay.herospark.com/cacau-sem-culpa-premium-460587', '_blank');
   };
 
   const premiumItems = [
