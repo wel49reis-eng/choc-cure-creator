@@ -41,7 +41,7 @@ export default function LandingPage() {
     }
     
     // Redirect to payment
-    window.open('https://pay.herospark.com/cacau-sem-culpa-o-prazer-do-chocolate-no-caminho-para-o-emagrecimento-447787', '_blank');
+    window.open('https://pay.herospark.com/cacau-sem-culpa-460581', '_blank');
   };
 
   const handleCTAWithScroll = () => {
@@ -375,20 +375,20 @@ export default function LandingPage() {
                   <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
                   <span>1º E-Book - Introdução ao Método</span>
                 </div>
-                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
-                  <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
+                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium line-through opacity-50">
+                  <span className="text-red-500 text-lg sm:text-xl flex-shrink-0">❌</span>
                   <span>BÔNUS: Manual Pessoal de Chocolate Saudável</span>
                 </div>
-                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
-                  <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
+                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium line-through opacity-50">
+                  <span className="text-red-500 text-lg sm:text-xl flex-shrink-0">❌</span>
                   <span>BÔNUS: Como Adoçar Doces Saudáveis</span>
                 </div>
-                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
-                  <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
+                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium line-through opacity-50">
+                  <span className="text-red-500 text-lg sm:text-xl flex-shrink-0">❌</span>
                   <span>BÔNUS: Mix de Farinha Sem Glúten - Doce que Faz Bem</span>
                 </div>
-                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
-                  <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
+                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium line-through opacity-50">
+                  <span className="text-red-500 text-lg sm:text-xl flex-shrink-0">❌</span>
                   <span>BÔNUS: Adoçantes Naturais para Adaptar as Receitas</span>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium line-through opacity-50">
@@ -414,7 +414,7 @@ export default function LandingPage() {
               </div>
 
               <div className="text-center mb-6 sm:mb-8">
-                <div className="text-3xl sm:text-4xl font-bold text-blue-600 mb-2 sm:mb-3">Apenas R$19,90</div>
+                <div className="text-3xl sm:text-4xl font-bold text-blue-600 mb-2 sm:mb-3">Apenas R$10,00</div>
                 <div className="text-base sm:text-lg text-gray-600 dark:text-gray-400">
                   <span className="line-through">R$471,00</span>
                 </div>
