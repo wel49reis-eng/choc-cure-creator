@@ -377,11 +377,11 @@ export default function LandingPage() {
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
                   <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
-                  <span>RECEITAS PARA REDUÇÃO DE PESO</span>
+                  <span>Receitas para Redução de Peso</span>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
                   <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
-                  <span>DICAS PARA BOLO DE CHOCOLATE FIT:</span>
+                  <span>Dicas para Bolo de Chocolate Fit :</span>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium ml-4">
                   <span>1. FARINHAS ALTERNATIVAS</span>
@@ -397,7 +397,7 @@ export default function LandingPage() {
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium bg-green-100 dark:bg-green-900/20 p-3 rounded-lg border-l-4 border-green-500">
                   <span className="text-green-500 text-lg sm:text-xl flex-shrink-0 font-bold">✅</span>
-                  <span className="font-bold text-green-700 dark:text-green-300">GARANTIA INCONDICIONAL DE 7 DIAS</span>
+                  <span className="font-bold text-green-700 dark:text-green-300">Garantia Incondicional de 7 Dias</span>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium line-through opacity-50">
                   <span className="text-red-500 text-lg sm:text-xl flex-shrink-0">❌</span>
