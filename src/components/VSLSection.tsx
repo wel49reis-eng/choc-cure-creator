@@ -31,7 +31,7 @@ export const VSLSection = ({ onCtaClick }: VSLSectionProps) => {
               De: <span className="line-through">R$471,00</span>
             </div>
             <div className="text-4xl font-bold text-primary mb-2">
-              Por apenas R$19,90
+              Por apenas R$10,00
             </div>
             <div className="text-sm text-accent">
               🔥 Oferta especial por tempo limitado!
@@ -43,7 +43,7 @@ export const VSLSection = ({ onCtaClick }: VSLSectionProps) => {
             if (typeof window !== 'undefined' && (window as any).fbq) {
               (window as any).fbq('track', 'Lead', {
                 content_name: 'Cacau Sem Culpa VSL',
-                value: 19.90,
+                value: 10.00,
                 currency: 'BRL'
               });
             }

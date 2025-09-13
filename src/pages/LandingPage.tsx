@@ -35,7 +35,7 @@ export default function LandingPage() {
     if (typeof window !== 'undefined' && (window as any).fbq) {
       (window as any).fbq('track', 'Lead', {
         content_name: 'Cacau Sem Culpa Básico',
-        value: 19.90,
+        value: 10.00,
         currency: 'BRL'
       });
     }
@@ -49,7 +49,7 @@ export default function LandingPage() {
     if (typeof window !== 'undefined' && (window as any).fbq) {
       (window as any).fbq('track', 'Lead', {
         content_name: 'Cacau Sem Culpa CTA',
-        value: 19.90,
+        value: 10.00,
         currency: 'BRL'
       });
     }
@@ -334,7 +334,7 @@ export default function LandingPage() {
               Valor total: <span className="line-through">R$471,00</span>
             </div>
           <CTABlock 
-            currentPrice="R$19,90"
+            currentPrice="R$10,00"
             buttonText="Quero meu Cacau"
             onCtaClick={handleCTAWithScroll}
           />
@@ -374,6 +374,34 @@ export default function LandingPage() {
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
                   <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
                   <span>1º E-Book - Introdução ao Método</span>
+                </div>
+                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
+                  <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
+                  <span>RECEITAS PARA REDUÇÃO DE PESO</span>
+                </div>
+                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
+                  <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
+                  <span>DICAS PARA BOLO DE CHOCOLATE FIT:</span>
+                </div>
+                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium ml-4">
+                  <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
+                  <span>1. FARINHAS ALTERNATIVAS</span>
+                </div>
+                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium ml-4">
+                  <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
+                  <span>2. GORDURAS SAUDÁVEIS</span>
+                </div>
+                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium ml-4">
+                  <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
+                  <span>3. ADOÇANTES NATURAIS</span>
+                </div>
+                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium ml-4">
+                  <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
+                  <span>4. UMIDADE NATURAL</span>
+                </div>
+                <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium bg-green-100 dark:bg-green-900/20 p-3 rounded-lg border-l-4 border-green-500">
+                  <span className="text-green-500 text-lg sm:text-xl flex-shrink-0 font-bold">🛡️</span>
+                  <span className="font-bold text-green-700 dark:text-green-300">GARANTIA INCONDICIONAL DE 7 DIAS</span>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium line-through opacity-50">
                   <span className="text-red-500 text-lg sm:text-xl flex-shrink-0">❌</span>
@@ -557,11 +585,11 @@ export default function LandingPage() {
             <span className="text-primary"> Sem Culpa?</span>
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Oferta especial de R$19,90 — só hoje!
+            Oferta especial de R$10,00 — só hoje!
           </p>
           
           <CTABlock 
-            currentPrice="R$19,90"
+            currentPrice="R$10,00"
             buttonText="Sim ! Eu Quero Chocolate"
             className="animate-neon-pulse [&_.cta-button]:max-w-lg"
             onCtaClick={handleCTAWithScroll}
