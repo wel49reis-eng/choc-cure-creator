@@ -48,7 +48,7 @@ export const CheckoutSection = ({
           Apenas {price}
         </div>
         <div className="text-sm text-muted-foreground">
-          <span className="line-through">R$471,00</span>
+          <span className="line-through">R$199,90</span>
         </div>
       </div>
 

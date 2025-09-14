@@ -28,7 +28,7 @@ export const VSLSection = ({ onCtaClick }: VSLSectionProps) => {
         <div className="inline-block bg-card border border-border rounded-2xl p-6 shadow-neon-pink">
           <div className="text-center mb-4">
             <div className="text-2xl font-bold text-muted-foreground mb-2">
-              De: <span className="line-through">R$471,00</span>
+              De: <span className="line-through">R$199,90</span>
             </div>
             <div className="text-4xl font-bold text-primary mb-2">
               Por apenas R$10,00
