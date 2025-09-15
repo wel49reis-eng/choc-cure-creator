@@ -537,9 +537,9 @@ export default function LandingPage() {
               </div>
 
               <div className="text-center mb-6 sm:mb-8">
-                <div className="text-3xl sm:text-4xl font-bold text-orange-600 mb-2 sm:mb-3">Apenas R$19,90</div>
+                <div className="text-3xl sm:text-4xl font-bold text-orange-600 mb-2 sm:mb-3">Apenas R$27,90</div>
                 <div className="text-base sm:text-lg text-gray-600 dark:text-gray-400">
-                  <span className="line-through">R$799,00</span>
+                  <span className="line-through">R$499,00</span>
                 </div>
               </div>
 
