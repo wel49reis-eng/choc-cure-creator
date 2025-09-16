@@ -516,23 +516,23 @@ export default function LandingPage() {
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
                   <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
-                  <span>2º E-Book - 40 Receitas de Bolos sem Lactose, Glúten e Açúcar</span>
+                  <span>Guia : 40 Receitas de Bolos sem Lactose, Glúten e Açúcar</span>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
                   <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
-                  <span>3º E-Book - O Chocolate 1% Cacau e o Controle de Apetite</span>
+                  <span>Guia : O Chocolate 1% Cacau e o Controle de Apetite</span>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
                   <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
-                  <span>4º E-Book - O Segredo do Cacau: Como o Chocolate Ajuda a Queimar Gordura</span>
+                  <span>Guia : O Segredo do Cacau: Como o Chocolate Ajuda a Queimar Gordura</span>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
                   <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
-                  <span>5º E-Book - Plano de 7 dias do Chocolate Emagrecedor</span>
+                  <span>Guia : Plano de 7 dias do Chocolate Emagrecedor</span>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
                   <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
-                  <span>6º E-Book - Choco Detox: Como Usar Chocolate para Desinflamar e Secar a Barriga</span>
+                  <span>Guia : Choco Detox: Como Usar Chocolate para Desinflamar e Secar a Barriga</span>
                 </div>
               </div>
 
