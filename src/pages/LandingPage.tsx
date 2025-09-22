@@ -345,20 +345,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Guarantee Section - Updated */}
-      <section className="py-20 px-4 bg-card/30">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-            Garantia Incondicional de 
-            <span className="text-primary"> 7 Dias</span>
-          </h2>
-          <p className="text-xl text-muted-foreground leading-relaxed">
-            Experimente todas as receitas. Se não ficar completamente satisfeita, 
-            devolvemos 100% do seu dinheiro sem perguntas e sem burocracia.
-          </p>
-        </div>
-      </section>
-
       {/* Checkout Section */}
       <section id="checkout-section" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-gradient-to-r from-purple-900/20 via-blue-900/20 to-indigo-900/20">
         <div className="max-w-6xl mx-auto">
