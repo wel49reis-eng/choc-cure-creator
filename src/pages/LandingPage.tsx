@@ -569,9 +569,9 @@ export default function LandingPage() {
       </section>
 
       {/* Trust Indicators Section */}
-      <section className="py-12 px-4 bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20">
+      <section className="py-12 px-4 bg-gradient-to-br from-pink-50 via-purple-50 to-pink-100 dark:bg-gradient-to-br dark:from-pink-900/20 dark:via-purple-900/20 dark:to-pink-900/30">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-foreground">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-800 dark:text-white">
             Sua Compra é 100% Segura e Garantida
           </h2>
           
@@ -586,10 +586,10 @@ export default function LandingPage() {
                 />
               </div>
               <div>
-                <h3 className="text-lg font-bold text-green-600 dark:text-green-400 mb-2">
+                <h3 className="text-lg font-bold text-pink-600 dark:text-pink-400 mb-2">
                   Garantia de 7 Dias
                 </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-300">
+                <p className="text-sm text-gray-700 dark:text-gray-200">
                   Se não ficar satisfeita, devolvemos 100% do seu dinheiro
                 </p>
               </div>
@@ -605,10 +605,10 @@ export default function LandingPage() {
                 />
               </div>
               <div>
-                <h3 className="text-lg font-bold text-blue-600 dark:text-blue-400 mb-2">
+                <h3 className="text-lg font-bold text-purple-600 dark:text-purple-400 mb-2">
                   Compra Segura
                 </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-300">
+                <p className="text-sm text-gray-700 dark:text-gray-200">
                   Ambiente totalmente protegido com certificado de segurança
                 </p>
               </div>
@@ -624,10 +624,10 @@ export default function LandingPage() {
                 />
               </div>
               <div>
-                <h3 className="text-lg font-bold text-orange-600 dark:text-orange-400 mb-2">
+                <h3 className="text-lg font-bold text-pink-600 dark:text-pink-400 mb-2">
                   Formas de Pagamento
                 </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-300">
+                <p className="text-sm text-gray-700 dark:text-gray-200">
                   Aceitamos os principais cartões de crédito do mercado
                 </p>
               </div>
