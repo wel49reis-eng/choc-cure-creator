@@ -406,23 +406,23 @@ export default function LandingPage() {
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium line-through opacity-50">
                   <span className="text-red-500 text-lg sm:text-xl flex-shrink-0">❌</span>
-                  <span>Guia : 40 Receitas de Bolos sem Lactose, Glúten e Açúcar</span>
+                  <span>BÔNUS: 40 Receitas de Bolos sem Lactose, Glúten e Açúcar</span>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium line-through opacity-50">
                   <span className="text-red-500 text-lg sm:text-xl flex-shrink-0">❌</span>
-                  <span>Guia : O Chocolate 1% Cacau e o Controle de Apetite</span>
+                  <span>BÔNUS: O Chocolate 1% Cacau e o Controle de Apetite</span>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium line-through opacity-50">
                   <span className="text-red-500 text-lg sm:text-xl flex-shrink-0">❌</span>
-                  <span>Guia : O Segredo do Cacau: Como o Chocolate Ajuda a Queimar Gordura</span>
+                  <span>BÔNUS: O Segredo do Cacau: Como o Chocolate Ajuda a Queimar Gordura</span>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium line-through opacity-50">
                   <span className="text-red-500 text-lg sm:text-xl flex-shrink-0">❌</span>
-                  <span>Guia : Plano de 7 dias do Chocolate Emagrecedor</span>
+                  <span>BÔNUS: Plano de 7 dias do Chocolate Emagrecedor</span>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium line-through opacity-50">
                   <span className="text-red-500 text-lg sm:text-xl flex-shrink-0">❌</span>
-                  <span>Guia : Choco Detox: Como Usar Chocolate para Desinflamar e Secar a Barriga</span>
+                  <span>BÔNUS: Choco Detox: Como Usar Chocolate para Desinflamar e Secar a Barriga</span>
                 </div>
               </div>
 
@@ -505,23 +505,23 @@ export default function LandingPage() {
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
                   <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
-                  <span>Guia : 40 Receitas de Bolos sem Lactose, Glúten e Açúcar</span>
+                  <span>BÔNUS: 40 Receitas de Bolos sem Lactose, Glúten e Açúcar</span>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
                   <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
-                  <span>Guia : O Chocolate 1% Cacau e o Controle de Apetite</span>
+                  <span>BÔNUS: O Chocolate 1% Cacau e o Controle de Apetite</span>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
                   <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
-                  <span>Guia : O Segredo do Cacau: Como o Chocolate Ajuda a Queimar Gordura</span>
+                  <span>BÔNUS: O Segredo do Cacau: Como o Chocolate Ajuda a Queimar Gordura</span>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
                   <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
-                  <span>Guia : Plano de 7 dias do Chocolate Emagrecedor</span>
+                  <span>BÔNUS: Plano de 7 dias do Chocolate Emagrecedor</span>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base font-medium">
                   <span className="text-green-500 text-lg sm:text-xl flex-shrink-0">✅</span>
-                  <span>Guia : Choco Detox: Como Usar Chocolate para Desinflamar e Secar a Barriga</span>
+                  <span>BÔNUS: Choco Detox: Como Usar Chocolate para Desinflamar e Secar a Barriga</span>
                 </div>
               </div>
 
