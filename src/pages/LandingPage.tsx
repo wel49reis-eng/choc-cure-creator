@@ -21,6 +21,9 @@ import benefit3Image from "@/assets/benefit-3-sem-gluten.jpg";
 import benefit4Image from "@/assets/benefit-4-reducao-inchaco.jpg";
 import benefit5Image from "@/assets/benefit-5-saciam-menos.jpg";
 import benefit6Image from "@/assets/benefit-6-sabor-irresistivel.jpg";
+import guaranteeSealImage from "@/assets/guarantee-seal-7days.jpg";
+import securePurchaseImage from "@/assets/secure-purchase-lock.jpg";
+import creditCardsImage from "@/assets/credit-cards-accepted.jpg";
 
 export default function LandingPage() {
   const scrollToCheckout = () => {
@@ -559,6 +562,74 @@ export default function LandingPage() {
                   <div className="w-3 h-3 sm:w-4 sm:h-4 bg-blue-500 rounded-full animate-pulse"></div>
                   <span>Acesso vitalício</span>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Indicators Section */}
+      <section className="py-12 px-4 bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-foreground">
+            Sua Compra é 100% Segura e Garantida
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            {/* 7 Days Guarantee */}
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="w-24 h-24 md:w-32 md:h-32 mx-auto">
+                <img 
+                  src={guaranteeSealImage} 
+                  alt="Garantia incondicional de 7 dias" 
+                  className="w-full h-full object-contain rounded-full shadow-lg"
+                />
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-green-600 dark:text-green-400 mb-2">
+                  Garantia de 7 Dias
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-300">
+                  Se não ficar satisfeita, devolvemos 100% do seu dinheiro
+                </p>
+              </div>
+            </div>
+
+            {/* Secure Purchase */}
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="w-24 h-24 md:w-32 md:h-32 mx-auto">
+                <img 
+                  src={securePurchaseImage} 
+                  alt="Compra segura e protegida" 
+                  className="w-full h-full object-contain shadow-lg"
+                />
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-blue-600 dark:text-blue-400 mb-2">
+                  Compra Segura
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-300">
+                  Ambiente totalmente protegido com certificado de segurança
+                </p>
+              </div>
+            </div>
+
+            {/* Credit Cards Accepted */}
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="w-32 h-24 md:w-40 md:h-32 mx-auto">
+                <img 
+                  src={creditCardsImage} 
+                  alt="Aceitamos diversos cartões de crédito" 
+                  className="w-full h-full object-contain shadow-lg"
+                />
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-orange-600 dark:text-orange-400 mb-2">
+                  Formas de Pagamento
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-300">
+                  Aceitamos os principais cartões de crédito do mercado
+                </p>
               </div>
             </div>
           </div>
