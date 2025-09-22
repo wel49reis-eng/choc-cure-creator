@@ -589,7 +589,7 @@ export default function LandingPage() {
                 <h3 className="text-lg font-bold text-pink-600 dark:text-pink-400 mb-2">
                   Garantia de 7 Dias
                 </h3>
-                <p className="text-sm text-gray-700 dark:text-gray-200">
+                <p className="text-sm text-gray-800 dark:text-white">
                   Se não ficar satisfeita, devolvemos 100% do seu dinheiro
                 </p>
               </div>
@@ -608,7 +608,7 @@ export default function LandingPage() {
                 <h3 className="text-lg font-bold text-purple-600 dark:text-purple-400 mb-2">
                   Compra Segura
                 </h3>
-                <p className="text-sm text-gray-700 dark:text-gray-200">
+                <p className="text-sm text-gray-800 dark:text-white">
                   Ambiente totalmente protegido com certificado de segurança
                 </p>
               </div>
@@ -627,7 +627,7 @@ export default function LandingPage() {
                 <h3 className="text-lg font-bold text-pink-600 dark:text-pink-400 mb-2">
                   Formas de Pagamento
                 </h3>
-                <p className="text-sm text-gray-700 dark:text-gray-200">
+                <p className="text-sm text-gray-800 dark:text-white">
                   Aceitamos os principais cartões de crédito do mercado
                 </p>
               </div>
